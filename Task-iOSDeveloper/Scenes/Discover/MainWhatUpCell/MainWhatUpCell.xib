@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainWhatUpCell" customModule="Task_iOSDeveloper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cg-NR-pAs" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="GnD-Pf-vbj"/>
+                            <outlet property="delegate" destination="-1" id="f6q-JS-Tbz"/>
+                        </connections>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="2cg-NR-pAs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SNc-b4-yNN"/>
+                <constraint firstAttribute="bottom" secondItem="2cg-NR-pAs" secondAttribute="bottom" id="Wc1-Lp-ZXy"/>
+                <constraint firstItem="2cg-NR-pAs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e2E-ca-Fgc"/>
+                <constraint firstAttribute="trailing" secondItem="2cg-NR-pAs" secondAttribute="trailing" id="x0E-5d-NpW"/>
+            </constraints>
+            <connections>
+                <outlet property="whatUpPagerView" destination="2cg-NR-pAs" id="20t-j7-ZZ7"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="102"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

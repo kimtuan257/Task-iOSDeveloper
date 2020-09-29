@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (5.2.2)
+  - FSPagerView (0.8.3)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSPagerView
+  - Moya
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSPagerView
+    - Moya
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 2d63a46098bd51bc064a277bae8501106e18811d
+
+COCOAPODS: 1.9.3
