@@ -112,9 +112,9 @@ class AppTabbarController: UITabBarController {
             barItem.setTitleTextAttributes(selectedArttributes, for: .selected)
             barItem.titlePositionAdjustment = titlePositionAdjustment
         }
-        tabBar.barTintColor = #colorLiteral(red: 0.6235294118, green: 0.6078431373, blue: 0.6078431373, alpha: 1)
+        tabBar.barTintColor = .white
         tabBar.isTranslucent = false
-        view.backgroundColor = #colorLiteral(red: 0.8941176471, green: 0.8784313725, blue: 0.8784313725, alpha: 1)
+        view.backgroundColor = .white
     }
 
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {

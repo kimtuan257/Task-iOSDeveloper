@@ -36,9 +36,11 @@ class AppNavigationController: UINavigationController, UIGestureRecognizerDelega
             UINavigationBar.appearance().compactAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         } else {
-            UINavigationBar.appearance().tintColor = .white
-            UINavigationBar.appearance().barTintColor = .systemYellow
-            UINavigationBar.appearance().isTranslucent = false
+            navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+            navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+            navigationBar.barTintColor = .systemYellow
+            navigationBar.backgroundColor = .systemYellow
+            view.backgroundColor = .systemYellow
         }
     }
 
